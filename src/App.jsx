@@ -16,7 +16,7 @@ const Icon = ({ name, size = 20, fill = 'none' }) => {
   return <svg width={size} height={size} viewBox="0 0 24 24" fill={fill} stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">{paths[name]}</svg>
 }
 const Avatar = ({ person, size = 'md', ring = false }) => <img className={`avatar avatar-${size} ${ring ? 'avatar-ring' : ''}`} src={person.photoUrl || image(person.pic, 120)} alt={person.name} />
-const currentUser = { name: 'Jamie Wilson', user: 'jamiewilson', pic: 'photo-1500648767791-00dcc994a43e', bio: 'Collecting little moments, finding beauty in the everyday ✨\nCoffee enthusiast · Slow mornings · Big daydreams' }
+const currentUser = { name: 'Jamie Wilson', user: 'jamiewilson', pic: 'photo-1500648767791-00dcc994a43e', photoUrl: '/jk-avatar.svg', bio: 'Collecting little moments, finding beauty in the everyday ✨\nCoffee enthusiast · Slow mornings · Big daydreams' }
 
 function App() {
   const [active, setActive] = useState('Home')
